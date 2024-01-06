@@ -96,5 +96,8 @@ body{
     .nav-links{
         display:none
     }
-    .
+}
+.email-container{
+    width:720px;
+    margin:50px auto;
 }
