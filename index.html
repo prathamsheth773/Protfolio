@@ -1,62 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Know More About Pratham</title>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Know More About Pratham</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    (function (w, d, t, h, s, n) {
+      w.FlodeskObject = n;
+      var fn = function () {
+        (w[n].q = w[n].q || []).push(arguments);
+      };
+      w[n] = w[n] || fn;
+      var f = d.getElementsByTagName(t)[0];
+      var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
+      var sm = d.createElement(t);
+      sm.async = true;
+      sm.type = 'module';
+      sm.src = h + s + '.mjs' + v;
+      f.parentNode.insertBefore(sm, f);
+      var sn = d.createElement(t);
+      sn.async = true;
+      sn.noModule = true;
+      sn.src = h + s + '.js' + v;
+      f.parentNode.insertBefore(sn, f);
+    })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
+  </script>
+</head>
+
+<body>
+  <div class="nav">
+    <a href="#" class="logo">Pratham Sheth</a>
+    <ul>
+      <li><a href="" class="nav-links">Projects</a></li>
+      <li><a href="" class="nav-links">My Article</a></li>
+      <li><a href="" class="email-btn">Join My Newsletter</a></li>
+    </ul>
+  </div>
+  <div class="header-container">
+    <div class="w-50">
+      <h1 class="title">Hi, I am Pratham</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum
+        animi ut maiores nisi earum, distinctio reprehenderit at autem
+        consequuntur?
+      </p>
+    </div>
+    <div class="w-50 align-right">
+      <img src="./img/Codewithpratham.jpg" alt="" class="user" />
+    </div>
+  </div>
+  <div class="project-container">
+    <div class="project-flex">
+      <!-- project 1 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/1600x800/?twitter" alt="" class="card-img">
+        <h3 class="project-title">Twitter Clone</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, reiciendis?</p>
+      </div>
+      <!-- project 2 -->
+      <div class="card">
+        <img src="https://source.unsplash.com/1600x800/?running" alt="" class="card-img">
+        <h3 class="project-title">Fitness Tracker</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, reiciendis?</p>
+      </div>
+    </div>
+  </div>
+  <div class="email-container">
+    <div id="fd-form-659997d0e956128871b83bab"></div>
     <script>
-        (function(w, d, t, h, s, n) {
-          w.FlodeskObject = n;
-          var fn = function() {
-            (w[n].q = w[n].q || []).push(arguments);
-          };
-          w[n] = w[n] || fn;
-          var f = d.getElementsByTagName(t)[0];
-          var v = '?v=' + Math.floor(new Date().getTime() / (120 * 1000)) * 60;
-          var sm = d.createElement(t);
-          sm.async = true;
-          sm.type = 'module';
-          sm.src = h + s + '.mjs' + v;
-          f.parentNode.insertBefore(sm, f);
-          var sn = d.createElement(t);
-          sn.async = true;
-          sn.noModule = true;
-          sn.src = h + s + '.js' + v;
-          f.parentNode.insertBefore(sn, f);
-        })(window, document, 'script', 'https://assets.flodesk.com', '/universal', 'fd');
-      </script>
-  </head>
-  <body>
-    <div class="nav">
-      <a href="#" class="logo">Pratham Sheth</a>
-      <ul>
-        <li><a href="" class="nav-links">Projects</a></li>
-        <li><a href="" class="nav-links">My Article</a></li>
-        <li><a href="" class="email-btn">Join My Newsletter</a></li>
-      </ul>
-    </div>
-    <div class="header-container">
-      <div class="w-50">
-        <h1 class="title">Hi, I am Pratham</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum
-          animi ut maiores nisi earum, distinctio reprehenderit at autem
-          consequuntur?
-        </p>
-      </div>
-      <div class="w-50 align-right">
-        <img src="./img/Codewithpratham.jpg" alt="" class="user" />
-      </div>
-    </div>
-    <div class="email-container">
-      <div id="fd-form-659997d0e956128871b83bab"></div>
-      <script>
-        window.fd("form", {
-          formId: "659997d0e956128871b83bab",
-          containerEl: "#fd-form-659997d0e956128871b83bab",
-        });
-      </script>
-    </div>
-  </body>
+      window.fd("form", {
+        formId: "659997d0e956128871b83bab",
+        containerEl: "#fd-form-659997d0e956128871b83bab",
+      });
+    </script>
+  </div>
+</body>
+
 </html>

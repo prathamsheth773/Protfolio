@@ -3,14 +3,14 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Poppins', sans-serif;}
 
 
 .user{
-    height:100px;
-    width:100px;
+    height:170px;
+    width:170px;
     border-radius:50%;
+    object-fit:cover;
 }
 .align-right{
     text-align:right;
@@ -45,14 +45,17 @@ body{
     color:white;
     text-decoration:none;
     padding:10px;
-    border-radius:10px;
+    border-radius:8px;
 
 }
 .email-btn:hover{
     background-color:black;
 }
-@media(min-width: 720px){
 
+@media(min-width: 720px){
+    .title{
+        font-size:42px;
+    }
     .nav{
         width:720px;
         margin:10px auto;
@@ -70,9 +73,44 @@ body{
     .w-50{
         width:360px;
     }
+    .project-container{
+        width:720px;
+        margin: 50px auto;
+    }
+    .card{
+        width:400px;
+        border-radius:18px;
+        box-shadow:0 0 8px #e3e3e3;
+        padding:12px;
+        margin:20px;
+
+    }
+    .project-flex .card:first-child{
+        margin-left:0;
+    }
+    .project-flex .card:last-child{
+        margin-right:0;
+    }
+    .card-img{
+        width:100%;
+        border-radius:18px;
+    }
+    .project-flex{
+        display:flex;
+    }
+    .email-container{
+        width:720px;
+        margin:50px auto;
+        box-shadow:0 0 8px #e3e3e3;
+        border-radius:18px;
+
+    }
 }
 @media (max-width:720px)
 {
+    .title{
+        font-size:36px;
+    }
     .nav{
         margin:10px ;
         display: flex;
@@ -96,8 +134,26 @@ body{
     .nav-links{
         display:none
     }
+    .project-container{
+        width:auto;
+        margin: 50px auto;
+    }
+    .card{
+        border-radius:18px;
+        box-shadow:0 0 8px #e3e3e3;
+        padding:12px;
+        margin:20px;
+    }
+    .card-img{
+        width:100%;
+        border-radius:18px;
+    }
+
+    .email-container{
+        margin:20px;
+        box-shadow:0 0 8px #e3e3e3;
+        border-radius:18px;
+
+    }
 }
-.email-container{
-    width:720px;
-    margin:50px auto;
-}
+
